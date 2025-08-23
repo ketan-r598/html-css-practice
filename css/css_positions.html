@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* height: 50vh; */
+      }
+
+      body {
+        height: 100vh;
+      }
+      .container {
+        border: 5px solid #000;
+      }
+
+      .static {
+        /* position: static; */
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      .relative {
+        position: relative;
+        background-color: lightgreen;
+        padding: 20px;
+        margin: 10px;
+        left: 0px;
+      }
+
+      .relative p {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: lightcoral;
+        /* padding: 10px; */
+      }
+      .fixed {
+        position: fixed;
+        background-color: lightyellow;
+        padding: 20px;
+        margin: 10px;
+        top: 10px;
+        right: 0;
+      }
+      .sticky {
+        position: sticky;
+        bottom: 0;
+        background-color: lightpink;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Positions</h1>
+      <div class="static">
+        <p>Element with Static Postion</p>
+      </div>
+      <div class="relative">
+        <p>Element with Relative Position</p>
+      </div>
+      <div class="fixed">
+        <p>Element with Fixed Position</p>
+      </div>
+
+      <div class="relative">
+        <p class="absolute">Element with Absolute Postion</p>
+      </div>
+
+      <div class="sticky">
+        <p>Element with Sticky Position</p>
+      </div>
+    </div>
+  </body>
+</html>

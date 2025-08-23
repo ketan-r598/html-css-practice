@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Master Class</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
+      .content {
+        border: 2px solid red;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .container {
+        /* height: 400px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container-item {
+        border: 1px solid black;
+        margin: 5px;
+        text-align: center;
+        padding: 15px;
+        color: white;
+        background-color: #b11663;
+        width: 50px;
+        height: 50px;
+      }
+
+      .container-item:nth-child(even) {
+        background-color: #435db0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h4>
+        Flexbox: flex-direction(row | row-reverse | column | column-reverse)
+      </h4>
+      <div class="container" style="flex-direction: row">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+    <div class="content">
+      <h3>Flexbox:</h3>
+      <div class="container">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+    <div class="content">
+      <h3>Flexbox-A</h3>
+      <div class="container">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+    <div class="content">
+      <h3>Flexbox-A</h3>
+      <div class="container">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+    <div class="content">
+      <h3>Flexbox-A</h3>
+      <div class="container">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+    <div class="content">
+      <h3>Flexbox-A</h3>
+      <div class="container">
+        <div class="container-item">1</div>
+        <div class="container-item">2</div>
+        <div class="container-item">3</div>
+        <div class="container-item">4</div>
+        <div class="container-item">5</div>
+        <div class="container-item">6</div>
+      </div>
+    </div>
+  </body>
+</html>
