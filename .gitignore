@@ -26,3 +26,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Custom
+validating-frontend-setup
+validating-frontend-setup/**
+phase-1-HTML-And-CSS/**
+resources/**
