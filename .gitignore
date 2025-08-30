@@ -32,4 +32,5 @@ yarn-error.log*
 validating-frontend-setup
 validating-frontend-setup/**
 phase-1-HTML-And-CSS/**
+phase-1-HTML-And-CSS
 resources/**
