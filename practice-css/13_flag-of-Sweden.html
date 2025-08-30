@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of Sweden</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      :root {
+        --bg-flag: #005583;
+        --bg-cross: #ffc200;
+        --flag-height: 320px;
+        --flag-width: calc(var(--flag-height) * 8 / 5);
+      }
+
+      .flag {
+        height: var(--flag-height);
+        width: var(--flag-width);
+        background-color: var(--bg-flag);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cross-1 {
+        width: var(--flag-width);
+        background-color: var(--bg-cross);
+        height: calc(var(--flag-height) / 5);
+      }
+      .cross-2 {
+        height: var(--flag-height);
+        background-color: var(--bg-cross);
+        width: calc(var(--flag-width) / 8);
+        position: absolute;
+        left: calc(var(--flag-width) * 5 / 16);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="cross-1"></div>
+      <div class="cross-2"></div>
+    </div>
+  </body>
+</html>

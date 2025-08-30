@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace of Spades</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --card-height: 450px;
+        --card-width: calc(var(--card-height) * 2 / 3);
+        --bg-card: #fff;
+        --bg-body: #00000080;
+        --card-border: #000000;
+      }
+      body {
+        height: 100vh;
+        background-color: var(--bg-body);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        border: 2px solid var(--card-border);
+        height: var(--card-height);
+        width: var(--card-width);
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-card);
+        border-radius: 1em;
+        padding: 0.5rem;
+      }
+      .row-1 {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+        gap: 1rem;
+      }
+
+      .row-2 {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .row-3 {
+        flex-grow: 1;
+        margin-top: 10%;
+        transform: rotateZ(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+        gap: 1rem;
+      }
+      .A {
+        transform: scale(2);
+        display: inline-block;
+      }
+      .spades {
+        transform: scale(2.5);
+        display: inline-block;
+      }
+      .center-spade {
+        transform: scale(5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="row-1">
+        <div class="A">A</div>
+        <div class="spades">&spades;</div>
+      </div>
+      <div class="row-2">
+        <div class="center-spade">&spades;</div>
+      </div>
+      <div class="row-3">
+        <div class="A">A</div>
+        <div class="spades">&spades;</div>
+      </div>
+    </div>
+  </body>
+</html>

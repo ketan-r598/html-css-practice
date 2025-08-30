@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Animation 2</title>
+
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader {
+        display: flex;
+        gap: 15px;
+      }
+      .squares {
+        width: 20px;
+        height: 20px;
+        background-color: #3498db;
+        transform: rotate(45deg);
+        animation: rotate 1s 1.5s infinite;
+      }
+      .squares:nth-child(1) {
+        background-color: red;
+      }
+      .squares:nth-child(2) {
+        background-color: green;
+      }
+      .squares:nth-child(3) {
+        background-color: blue;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(45deg);
+        }
+        100% {
+          transform: rotate(135deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="squares"></div>
+      <div class="squares"></div>
+      <div class="squares"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of Switzerland</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-main);
+      }
+
+      :root {
+        --bg-main: rgba(0, 0, 0, 0.5);
+        --bg-flag: red;
+        --bg-cross: white;
+        --flag-height: 350px;
+        --flag-width: var(--flag-height);
+        --cross-width: calc(var(--flag-width) * 5 / 8);
+        --cross-height: calc(var(--flag-height) * 3 / 16);
+      }
+
+      .swiz-flag {
+        background-color: var(--bg-flag);
+        height: var(--flag-height);
+        width: var(--flag-width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-rec {
+        background-color: var(--bg-cross);
+        height: var(--cross-height);
+        width: var(--cross-width);
+      }
+      .main-rec2 {
+        background-color: var(--bg-cross);
+        height: var(--cross-width);
+        width: var(--cross-height);
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiz-flag">
+      <div class="main-rec"></div>
+      <div class="main-rec2"></div>
+    </div>
+  </body>
+</html>

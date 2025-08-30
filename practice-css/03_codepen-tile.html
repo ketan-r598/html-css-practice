@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codepen Tile</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --font-main: "Noto Sans", sans-serif;
+        --bg-main: #131417;
+        --bg-card: #1e1f26;
+        --bg-stats: #131417;
+        --username: #b7bbc8;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-main);
+        font-family: var(--font-main);
+        color: var(--username);
+      }
+      .card-container {
+        background-color: var(--bg-card);
+        padding: 1rem;
+        max-width: 467px;
+      }
+      .card {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 0.5rem;
+        padding: 0.5rem;
+      }
+      .card-caption img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+
+      .card-body {
+        display: flex;
+        gap: 1rem;
+      }
+      .card-body img {
+        width: 15%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+      .b-text p {
+        font-size: 0.8rem;
+      }
+      .card-footer-list {
+        display: none;
+      }
+
+      .card-container:hover .card-footer-list {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-caption">
+          <img src="./static-assets/images/img01.jpg" alt="caption-image" />
+        </div>
+        <div class="card-body">
+          <img src="./static-assets/images/img02.jpg" alt="body-image" />
+          <div class="b-text">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet .</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <ul class="card-footer-list">
+            <li class="card-footer-list-item">❤️ 8</li>
+            <li class="card-footer-list-item">💬 25</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

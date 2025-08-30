@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(36, 33, 33, 1);
+      }
+      :root {
+        /* height / width = 2:3 */
+        --var-height: 180px;
+        --var-width: calc(var(--var-height) * 1.5);
+        --var-white: #fff;
+        --var-red: red;
+        --var-green: green;
+      }
+
+      .flag {
+        height: var(--var-height);
+        width: var(--var-width);
+        display: flex;
+        flex-direction: row;
+      }
+      .stripe-1 {
+        width: calc(var(--var-width) / 3);
+        background-color: var(--var-white);
+      }
+      .stripe-2 {
+        width: calc(var(--var-width) * 2 / 3);
+        display: flex;
+        flex-direction: column;
+      }
+      .stripe-2a {
+        background-color: var(--var-red);
+        flex-grow: 1;
+      }
+      .stripe-2b {
+        background-color: var(--var-green);
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="stripe-1"></div>
+      <div class="stripe-2">
+        <div class="stripe-2a"></div>
+        <div class="stripe-2b"></div>
+      </div>
+    </div>
+  </body>
+</html>

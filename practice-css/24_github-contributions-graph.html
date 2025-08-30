@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Contributions Graph</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: rgb(119, 136, 153, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        height: 15%;
+        width: 90%;
+        background-color: rgba(119, 136, 153, 0.64);
+      }
+
+      .graph {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(52, 1fr);
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0.25em;
+      }
+
+      li {
+        /* flex-grow: 1; */
+        height: 8px;
+        width: 8px;
+        /* border-radius: 0.15em; */
+        background-color: rgba(215, 217, 219, 0.696);
+      }
+
+      li[data="1"] {
+        background-color: rgba(0, 0, 255, 0.334);
+      }
+
+      li[data="3"] {
+        background-color: rgba(0, 0, 255, 0.597);
+      }
+
+      li[data="5"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="graph">
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li data="3"></li>
+          <li></li>
+          <li data="5"></li>
+          <li></li>
+          <li data="1"></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- Not a greaat one but works -->

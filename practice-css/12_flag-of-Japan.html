@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of Japan</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0, 0.5);
+      }
+
+      :root {
+        --flag-col: white;
+        --circle-col: red;
+        --height: 200px;
+        --width: calc(var(--height) * 1.5);
+      }
+
+      .jap-flag {
+        background-color: var(--flag-col);
+        height: var(--height);
+        width: var(--width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .circle {
+        height: calc(var(--height) * 3 / 5);
+        width: calc(var(--height) * 3 / 5);
+        border-radius: 50%;
+        background-color: var(--circle-col);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jap-flag">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

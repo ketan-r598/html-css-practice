@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 of hearts</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+      }
+      .card {
+        height: 300px;
+        width: 200px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0.75em;
+      }
+
+      .row-1 {
+        flex-grow: 1;
+      }
+
+      .row-1 .A,
+      .row-1 .hearts {
+        text-align: center;
+      }
+
+      .row-1 .A,
+      .row-3 .A {
+        padding-top: 0.25em;
+        font-size: 1.2em;
+      }
+      .row-3 .A {
+        padding-left: 0.25em;
+      }
+      .row-2 {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 4;
+      }
+      .row-3 {
+        padding-left: 0.5em;
+        flex-grow: 1;
+        transform: rotateZ(180deg);
+      }
+      .part-1,
+      .part-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        align-items: center;
+      }
+
+      .part-2 {
+        transform: rotateZ(180deg);
+      }
+      .hearts {
+        font-size: 2.25em;
+        height: 10px;
+      }
+      .center-hearts {
+        font-size: 3.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="row-1">
+        <div class="A">4</div>
+        <div class="hearts">&hearts;</div>
+      </div>
+      <div class="row-2">
+        <div class="part-1">
+          <div class="center-hearts">&hearts;</div>
+          <div class="center-hearts">&hearts;</div>
+        </div>
+        <div class="part-2">
+          <div class="center-hearts">&hearts;</div>
+          <div class="center-hearts">&hearts;</div>
+        </div>
+      </div>
+      <div class="row-3">
+        <div class="A">4</div>
+        <div class="hearts">&hearts;</div>
+      </div>
+    </div>
+  </body>
+  <!-- practice it again -->
+</html>

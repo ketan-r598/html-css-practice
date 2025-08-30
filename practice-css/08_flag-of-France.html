@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of France</title>
+    <style>
+      body,
+      html {
+        height: 100vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      :root {
+        --flag-width: 30vw;
+        --flag-height: 20vw;
+        --blue: #0055a4;
+        --white: #fff;
+        --red: #ef4135;
+      }
+      .flag {
+        width: var(--flag-width);
+        height: var(--flag-height);
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: row;
+      }
+      .blue,
+      .white,
+      .red {
+        width: 33.33%;
+        height: 100%;
+      }
+      .blue {
+        background-color: var(--blue);
+      }
+      .white {
+        background-color: var(--white);
+      }
+      .red {
+        background-color: var(--red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flag">
+        <div class="blue"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of Germany</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      :root {
+        --black: #000000;
+        --red: #dd0000;
+        --gold: #ffce00;
+        --var-height: 180px;
+        --var-width: 300px;
+      }
+
+      .flag {
+        height: var(--var-height);
+        width: var(--var-width);
+
+        display: flex;
+        flex-direction: column;
+      }
+      .stripe {
+        height: calc(var(--var-height) / 3);
+        width: 100%;
+      }
+      .black {
+        background-color: var(--black);
+      }
+      .red {
+        background-color: var(--red);
+      }
+      .gold {
+        background-color: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="stripe black"></div>
+      <div class="stripe red"></div>
+      <div class="stripe gold"></div>
+    </div>
+  </body>
+</html>

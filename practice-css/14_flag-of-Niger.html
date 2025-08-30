@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag of Niger</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0, 0.5);
+      }
+      :root {
+        --red-stripe: #e05206;
+        --white-stripe: #ffffff;
+        --green-stripe: #0db02b;
+        --flag-height: 260px;
+        --flag-width: calc(var(--flag-height) * 7 / 6);
+      }
+      .flag {
+        display: flex;
+        height: var(--flag-height);
+        width: var(--flag-width);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--white-stripe);
+      }
+      .stripe-1 {
+        width: 100%;
+        height: calc(var(--flag-height) / 3);
+        background-color: var(--red-stripe);
+      }
+      .stripe-2 {
+        width: 100%;
+        height: calc(var(--flag-height) / 3);
+        background-color: var(--white-stripe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .stripe-3 {
+        width: 100%;
+        height: calc(var(--flag-height) / 3);
+        background-color: var(--green-stripe);
+      }
+      .circle {
+        height: calc(var(--flag-height) * 0.85 / 3);
+        width: calc(var(--flag-height) * 0.85 / 3);
+        border-radius: 50%;
+        background-color: var(--red-stripe);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="stripe-1"></div>
+      <div class="stripe-2">
+        <div class="circle"></div>
+      </div>
+      <div class="stripe-3"></div>
+    </div>
+  </body>
+</html>

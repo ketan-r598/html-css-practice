@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Carousel</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .carousel-content {
+        font-weight: bold;
+        color: #333;
+        background-color: blue;
+        padding: 0.3rem;
+        color: white;
+        border-radius: 0.25rem;
+      }
+      .carousel-content::after {
+        content: "";
+        animation: carousel 2s infinite;
+      }
+      @keyframes carousel {
+        0% {
+          content: "coding";
+        }
+        33% {
+          content: "design";
+        }
+        66% {
+          content: "art";
+        }
+        100% {
+          content: "signing";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <span>I love</span>
+      <span class="carousel-content"></span>
+    </div>
+  </body>
+</html>
